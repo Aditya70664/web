@@ -1,0 +1,593 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b2815;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background-color: #142d19;
+    padding: 20px 0;
+    border-bottom: 1px solid #2e442f;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f2f7ef;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Default text color */
+    font-weight: 500;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+    color: red; /* Change text color to red on hover */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #74a653;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 20px auto;
+    color: #a6b494;
+}
+
+.breadcrumbs a {
+    color: #74a653;
+    text-decoration: none;
+}
+
+/* Main Styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.featured-article h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #e3efdd;
+}
+
+.article-meta {
+    color: #9fae98;
+    margin-bottom: 20px;
+}
+
+.featured-article img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Share Buttons */
+.share-buttons {
+    margin-top: 30px;
+}
+
+.share-buttons h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #a6b494;
+}
+
+.share-buttons ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.share-buttons ul li a {
+    display: block;
+}
+
+.share-buttons ul li img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #142d19;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Key Takeaways Section */
+.key-takeaways {
+    background-color: #e8f5e1; /* Light green background */
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #74a653; /* Darker green border */
+    border-radius: 4px;
+}
+
+.key-takeaways h2 {
+    color: #5b7f57; /* Dark green for the heading */
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.key-takeaways ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;
+}
+
+.key-takeaways ul li {
+    color: #3d583c; /* Dark green text */
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.key-takeaways ul li:before {
+    content: '•'; /* Custom bullet point */
+    color: #74a653; /* Darker green color for the bullet */
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.quote-section {
+    margin: 20px 0; /* Space above and below the quote section */
+    padding: 20px; /* Padding around the quote section */
+    border-left: 5px solid #74a653; /* Green border on the left */
+    background-color: #f9f9f9; /* Light background color for the quote section */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.quote-section blockquote {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    color: #555; /* Dark grey text color for the quote */
+}
+
+.quote-section footer {
+    text-align: right;
+    font-size: 14px; /* Adjust font size if needed */
+    color: #f4ecec; /* Lighter grey text color for the author */
+}
+
+
+/* More You Like Section */
+.more-you-like {
+    margin-top: 30px;
+}
+
+.more-you-like h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e3efdd;
+}
+
+.more-you-like ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange items horizontally */
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap if they overflow */
+}
+
+.more-you-like ul li {
+    display: flex;
+    flex-direction: column; /* Stack image and description vertically */
+    align-items: center;
+    max-width: 210px; /* Set a maximum width for items */
+}
+
+.more-you-like ul li img {
+    margin-bottom: 10px; /* Space between image and text */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.more-you-like ul li p {
+    margin: 0;
+    text-align: center;
+}
+
+.more-you-like ul li a {
+    text-decoration: none;
+    color: #e3efdd;
+    font-weight: bold;
+}
+
+.more-you-like ul li a:hover {
+    color: red; /* Change text color to red on hover */
+}
+
+/* Contact Info Section */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #74a653; /* Match the color scheme */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content and Sidebar */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.featured-article, .key-takeaways, .article-content, .more-you-like {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.sidebar {
+    width: 300px; /* Adjust the width as needed */
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: #2e442f; /* Light background for sidebar */
+    border-radius: 8px;
+}
+
+.quick-overview, .add-section {
+    margin-bottom: 20px;
+}
+
+.quick-overview h3, .add-section h3 {
+    font-size: 20px;
+    color: #e3efdd;
+    margin-bottom: 10px;
+}
+
+.quick-overview ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-overview ul li {
+    margin-bottom: 10px;
+}
+
+.quick-overview ul li a {
+    text-decoration: none;
+    color: #74a653;
+}
+
+.quick-overview ul li a:hover {
+    text-decoration: underline;
+}
+
+.add-section p {
+    margin: 0;
+}
+
+.add-section a {
+    color: #74a653;
+    text-decoration: none;
+}
+
+.add-section a:hover {
+    text-decoration: underline;
+}
+
+.more-info {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.more-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.more-info a:hover {
+    text-decoration: underline;
+}
+
+/* Animation for fading in elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the key-takeaways section */
+.key-takeaways {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Apply the animation to the more-you-like section */
+.more-you-like {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Apply the animation to images */
+img {
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.centered-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* Ensure the image scales well with responsive designs */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    background-color: #1b2815; /* Set the background color here */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    max-width: 100%;
+    border-radius: 8px; /* Optional: Add rounded corners to images */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+/* Next and previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Ensuring the background color stays until halfway through the image */
+.slideshow-container::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; /* Start from the top of the container */
+    left: 0;
+    width: 100%;
+    height: var(--background-height); /* Dynamic height */
+    background-color: #1b2815; /* Background color to apply */
+    z-index: -1; /* Ensure it sits behind the slideshow content */
+}
+
+
+/* Latest News Styles */
+.latest-news {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #142d19;
+    border-radius: 8px;
+}
+
+.latest-news h2 {
+    font-size: 24px;
+    color: #e3efdd;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    border: 1px solid #2e442f;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #1b2815;
+}
+
+.news-item h3 {
+    font-size: 20px;
+    color: #74a653;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    color: #9fae98;
+    margin-bottom: 10px;
+}
+
+.news-item a {
+    text-decoration: none;
+    color: #e3efdd;
+    font-weight: bold;
+}
+
+.news-item a:hover {
+    color: red;
+}
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.weather-widget {
+    margin-left: 20px; /* Space between the slideshow and the weather widget */
+    flex: 1; /* Make sure the widget fits nicely beside the slideshow */
+}
+
+.weatherwidget-io {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+.weather-widget {
+    margin-left: 20px; /* Space between the slideshow and the weather widget */
+    flex: 1; /* Make sure the widget fits nicely beside the slideshow */
+}
+
+.weather-widget h2 {
+    margin-bottom: 10px;
+}
+
+#weatherForm {
+    margin-bottom: 10px;
+}
+
+#weatherForm input {
+    padding: 5px;
+    font-size: 1em;
+}
+
+#weatherForm button {
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#weatherInfo {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+/* Remove the previous and next button styles */
+.prev, .next {
+    display: none; /* Hide the navigation arrows */
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0b400f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the header is above other content */
+    height: 80px; /* Adjust based on header height */
+    /* Additional styles if necessary */
+}
+
+main {
+    padding-top: 80px; /* Adjust this based on the header height */
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSN - News Article</title>
+    <link rel="stylesheet" href="news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #0b400f;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Ensure the header is above other content */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fdfcfc;
+        }
+
+        .search-bar {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            font-size: 1em;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        main {
+            padding-top: 80px; /* Adjust this based on the header height */
+        }
+
+        .centered-paragraph {
+            margin-left: 3cm;
+            margin-right: 3cm;
+            text-align: justify;
+        }
+
+        /* Back to Top button style */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #333;
+            color: #1f641b;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .back-to-top:hover {
+            background-color: #555;
+        }
+
+        /* Animation for "More You Like" section */
+        .more-you-like {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .more-you-like.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+ /* Video Section */
+ .video-section {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .video-section iframe {
+            width: 100%;
+            max-width: 800px; /* Adjust max-width as needed */
+            height: 450px; /* Adjust height as needed */
+            border: none;
+        }
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">SSN NEWS</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Opinion</a></li>
+                    <li><a href="#">Education</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <form action="https://www.ccn.com/search" method="get" target="_blank">
+                    <input type="text" name="q" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumbs">
+            <a href="#">Home</a> / <a href="#">News</a> / <a href="#">Crypto</a> / <span>Ludhiana: Traffic woes outside colleges hazardous for students</span>
+        </div>
+
+        <article class="featured-article">
+            <h1>Ludhiana: Traffic woes outside colleges hazardous for students</h1>
+            <p class="article-meta">5 min Read | By Newstop | Verified by Aditya Sharma</p>
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="traffic.jpeg" style="width:2000" height="350">
+                </div>
+        
+                <div class="mySlides">
+                    <img src="Uttar-Pradesh-Chief-Minister-Yogi-Adityanath.avif" style="width:2000">
+                </div>
+        
+                <div class="mySlides">
+                    <img src="Central-forces-have-been-deployed-at-Kolkata-s-RG-_1724254229519.avif" style="width:2000">
+                </div>
+            </div>
+
+
+
+            
+
+    <!-- Next and previous buttons
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>-->
+
+
+
+        </article>
+
+        <div class="key-takeaways">
+            <h2>KEY TAKEAWAYS</h2>
+            <ul>
+                <li>The lack of adequate pathways, signboards, and road infrastructure near colleges in Ludhiana.</li>
+                <li>Nidhi, a second-year student, expressed her frustration, noting that now they have got used to the situation.</li>
+                <li>The new stablecoin aims to expand Tether’s market share and provide a new option for users in the UAE.</li>
+            </ul>
+        </div>
+
+        <div class="centered-paragraph">
+            <h2>Government College for Girls near Bharat Nagar Chowk, students complain about their struggle to cross the road after the construction of the elevated NHAI overbridge.</h2>
+            <h2>BA final year student Supreet stated, “Many students are helpless to cross the lane to catch autos from other sides. At times, it becomes difficult to cross due to hectic traffic as the vehicles do not slow down, putting pedestrians at risk.”</h2>
+            <h2>Prabhjot Kaur, another student cited that the auto drivers recklessly park outside college gates encroaching the remaining space, where students riding scooty face hurdles to navigate this lane.</h2>
+           
+              <!-- Insert graph image here -->
+              <img src="traffic.jpeg" alt="Traffic Data Graph" class="centered-image">
+
+
+           
+            <h2>Speaking of the inconvenience faced by students, college principal, Suman Lata said that before the construction of NHAI flyover students did not face this problem as they had the foot overbridge to cross the road.</h2>
+            <h2>But now, the number of accidents have risen due to unchecked speeding. The students are now obliged to walk to Durga Mata mandir and Bharat Nagar Chowk to cross. But the filthy water accumulated near this stretch makes it difficult to walk.</h2>
+            <h2>She further asserted that we have raised many complaints with then NHAI project director, Navratan but the issue remains the same.</h2>
+            <h2>At Khalsa College, Civil Lines, the presence of a zebra crossing is rendered ineffective due to the absence of traffic lights. The busy market area exacerbates the issue, with the gate staff ensuring the safety of students leaving the premises.</h2>
+        </div>
+
+         <!-- Quote Section -->
+    <div class="quote-section">
+        <blockquote>
+            <p><h4>"If you're walking with your lady on the sidewalk, I still like to see a man walking street-side, to protect the lady from traffic. I grew up with that, and I hate to see something like that get lost. 
+                I still like to see that a man opens the door. I like those touches of chivalry that are fast disappearing."</h4></p>
+            
+                <h4>- Betty White</h4>
+        </blockquote>
+    </div>
+    
+    <!--<aside class="table-of-contents">
+        <h3>TABLE OF CONTENTS</h3>
+        <ul>
+            <li><a href="#section1">Will A Policy Change Save The Markets?</a></li>
+            <li><a href="#section2">No Policy Change In July</a></li>
+            <li><a href="#section3">Possible Cut In September</a></li>
+            <li><a href="#section4">Analysts’ Reaction</a></li>
+            <li><a href="#section5">Other Central Banks Started To Cut</a></li>
+            <li><a href="#section6">Economic Activity Improves</a></li>
+            <li><a href="#section7">Trump Warns Possible Rate Cut Before Elections</a></li>
+        </ul>
+    </aside> 
+
+        <!-- New "For More Info" Section -->
+        <div class="more-info">
+            <p>For more information, refer to this link:
+                <a href="YOUR_LINK_HERE" target="_blank">https://www.hindustantimes.com/</a>
+            </p>
+        </div>
+
+            <!-- Video Section -->
+            <div class="video-section">
+                <h2>Watch Our Latest Video</h2>
+                <iframe src="https://www.youtube.com/embed/0VIqwlkj_DM?si=nw31SIzbux94T0x-" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+
+            <br>
+            <h1>Congestion: How India's Roads and Traffic are Stifling Growth</h1>
+            <div class="centered-paragraph">
+                <h2>India is one of the fastest-growing economies in the world, with a rapidly increasing population of around 1.4 billion people. However, this growth comes with its own set of challenges, and one of the most pressing ones is traffic congestion. As more people move to urban areas in search of better opportunities, the number of vehicles on the road has increased dramatically, leading to long hours of waiting in traffice</h2>
+                <h2>A recent study by TomTom Traffic Index has shown that Bengaluru, India's leading IT city, is the world's second most traffic-congested city. For instance, to travel a distance of 10 km within Bengaluru city limits, it takes close to 30 minutes, whereas the same distance can be covered in less than 13 minutes in Dubai.</h2>
+                <h2>However, Bengaluru is not alone in facing this problem, as other major Indian cities also suffer from severe traffic congestion. The impact of traffic congestion is wider than wasted time and frustration for commuters. It also has severe economic and environmental consequences. Traffic jams can increase fuel consumption and emissions, contributing to air pollution and climate change. Furthermore, the time lost in traffic can result in reduced productivity and increased business costs.</h2>
+               
+                  <!-- Insert graph image here -->
+                  <img src="traffic2.jpeg" alt="Traffic Data Graph" class="centered-image" width="3000" height="400">
+    
+    
+               
+                <h2>Indian drivers, on average, spend an astonishing 135 hours per year stuck in traffic, which is frustrating and results in a colossal waste of fuel and lost productivity, costing them $22 billion. To put it into perspective, this is equivalent to around 50 days of work per driver lost yearly.</h2>
+                <h2></h2>
+                <h2></h2>
+                <h2></h2>
+            </div>
+    
+            <!-- New "For More Info" Section -->
+            <div class="more-info">
+                <p>For more information, refer to this link:
+                    <a href="YOUR_LINK_HERE" target="_blank">https://www.linkedin.com/pulse/congestion-how-indias-roads-traffic-stifling-growth-bipin-daniel#:~:text=Indian%20drivers%2C%20on%20average%2C%20spend,work%20per%20driver%20lost%20yearly.</a>
+                </p>
+            </div>
+
+
+<!-- Latest News Section -->
+<div class="latest-news">
+    <h2>Latest News</h2>
+    <div id="news-container"></div>
+</div>
+
+
+
+
+        <!-- More You Like Section -->
+        <div class="more-you-like" id="moreYouLike">
+            <h3>More You Like</h3>
+            <ul>
+                <li>
+                    <img src="Central-forces-have-been-deployed-at-Kolkata-s-RG-_1724254229519.avif" width="210" height="125" alt="Related Image 1">
+                    <p><a href="#">Kolkata rape-murder case: CISF inspects RG Kar hospital after SC order</a></p>
+                </li>
+                <li>
+                    <img src="hemant-mishra-utility-stock-payment-instant-.avif" width="210" height="125" alt="Related Image 2">
+                    <p><a href="#">Zomato to buy Paytm's movie, event ticketing business for ₹2,048 crore</a></p>
+                </li>
+                <li>
+                    <img src="Uttar-Pradesh-Chief-Minister-Yogi-Adityanath.avif" width="210" height="125" alt="Related Image 3">
+                    <p><a href="#">Yogi govt developing dedicated crop and fruit clusters</a></p>
+                </li>
+
+
+                <li>
+                    <img src="Central-forces-have-been-deployed-at-Kolkata-s-RG-_1724254229519.avif" width="210" height="125" alt="Related Image 1">
+                    <p><a href="#">Kolkata rape-murder case: CISF inspects RG Kar hospital after SC order</a></p>
+                </li>
+                <li>
+                    <img src="hemant-mishra-utility-stock-payment-instant-.avif" width="210" height="125" alt="Related Image 2">
+                    <p><a href="#">Zomato to buy Paytm's movie, event ticketing business for ₹2,048 crore</a></p>
+                </li>
+                
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 NEWSTOP. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="share-buttons">
+                <h3>Share This Article</h3>
+                <ul>
+                    <li><a href="https://twitter.com/intent/tweet?url=YOUR_URL_HERE" target="_blank"><img src="t icon.png" alt="Twitter"></a><h6>Twitter</h6></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL_HERE" target="_blank"><img src="f icon.png" alt="Facebook"></a><h6>Facebook</h6></li>
+                    <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL_HERE" target="_blank"><img src="l icon.png" alt="LinkedIn"></a><h6>Linkedin</h6></li>
+                    <li><a href="mailto:?subject=Check%20out%20this%20article&body=YOUR_URL_HERE" target="_blank"><img src="e icon.png" alt="Email"></a><h6>Email</h6></li>
+                </ul>
+            </div>
+            <!-- New Contact Info Section -->
+            <div class="contact-info">
+                <p>Email: <a href="mailto:contact@newstop.com">contact@newstop.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        Back to Top
+    </div>
+
+    <script>
+        // Show the "Back to Top" button when scrolling down
+        window.onscroll = function () {
+            const backToTopButton = document.getElementById('backToTop');
+            const moreYouLikeSection = document.getElementById('moreYouLike');
+            const windowHeight = window.innerHeight;
+            const moreYouLikeTop = moreYouLikeSection.getBoundingClientRect().top;
+
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+
+            if (moreYouLikeTop < windowHeight * 0.8) {
+                moreYouLikeSection.classList.add('visible');
+            } else {
+                moreYouLikeSection.classList.remove('visible');
+            }
+        };
+
+        // Scroll to the top of the page when the "Back to Top" button is clicked
+        document.getElementById('backToTop').onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        
+    </script>
+    <script src="news.js"></script>
+
+</body>
+
+</html>
